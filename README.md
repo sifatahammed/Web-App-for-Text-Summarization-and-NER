@@ -1,17 +1,17 @@
-# Text Summarization and Named Entity Recognition (NER) Web App
+# Web App for Text Summarization and Named Entity Recognition (NER) 
 
 This project is a web application that provides two core functionalities:
 
-1. **Text Summarization**: Summarizes a given text using a pre-trained BART model.
+1. **Text Summarization**: Summarizes a given text using a fine-tuned BART model and then use transfer-learning train the model on a seperate dataset.
 2. **Named Entity Recognition (NER)**: Extracts named entities (like persons, organizations, locations, etc.) from text using a fine-tuned XLNet model.
 
-Users can upload text files (.txt or .pdf) or directly input text to process. The app allows users to toggle between Text Summarization and NER functionalities.
+Users can upload text files (.txt, .csv or .pdf) or directly input text to process. The app allows users to toggle between Text Summarization and NER functionalities.
 
 ---
 
 ## Features
 
-- **Dynamic Input Support**: Accepts both manual text input and file uploads (.txt and .pdf).
+- **Dynamic Input Support**: Accepts both manual text input and file uploads (.txt, .csv and .pdf).
 - **Interactive Results**: Users can view summarization and NER results dynamically.
 - **Pre-trained Models**:
   - TensorFlow-based BART model for text summarization.
@@ -43,7 +43,7 @@ Users can upload text files (.txt or .pdf) or directly input text to process. Th
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sifatahammed/Web-App-for-Text-Summarization-and-NER.git
 cd your-repo-name
 ```
 
@@ -67,7 +67,7 @@ cd your-repo-name
    ```
    The backend server will run on `http://127.0.0.1:8000` by default.
 
-4. (Optional) Use **ngrok** to expose your server to the internet:
+4. Use **ngrok** to expose your server to the internet:
    ```bash
    ngrok http 8000
    ```
@@ -82,7 +82,7 @@ cd your-repo-name
 ## Usage
 
 1. Open the web app in your browser.
-2. Upload a text file (.txt or .pdf) or manually input text.
+2. Upload a text file (.txt, .csv or .pdf) or manually input text.
 3. Select the desired task (Text Summarization or NER) using the buttons.
 4. View the results in the output box.
 
