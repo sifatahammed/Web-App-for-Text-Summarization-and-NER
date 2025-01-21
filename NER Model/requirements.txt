@@ -1,10 +1,11 @@
 Python
-tensorflow
-scikit-learn
+torch
 numpy
 pandas
-matplotlib
-seaborn
+transformers 
+datasets 
+evaluate
+nlpaug 
+nltk
 os
-opencv-python 
-tqdm 
+wandb
