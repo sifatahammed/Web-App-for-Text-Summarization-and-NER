@@ -35,7 +35,7 @@ Users can upload text files (.txt, .csv or .pdf) or directly input text to proce
 │   ├── text_sumarization.ipynd
 │   ├── requirements.txt     # Dependencies
 ├── backend/
-│   ├── main.py           # FastAPI backend code
+│   ├── main.py           # Backend code
 │   ├── requirements.txt  # Backend dependencies
 └── README.md                # Project documentation.
 └── License.txt              
