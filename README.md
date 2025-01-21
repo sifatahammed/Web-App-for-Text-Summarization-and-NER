@@ -30,8 +30,10 @@ Users can upload text files (.txt, .csv or .pdf) or directly input text to proce
 │   ├── script.js        # JavaScript for interactivity
 ├── NER_Model/
 │   ├── NER.ipynd
+│   ├── requirements.txt      # Dependencies
 ├── Text_Sumarization_Model/
-│   ├── text_sumarization.ipynd   
+│   ├── text_sumarization.ipynd
+│   ├── requirements.txt     # Dependencies
 ├── backend/
 │   ├── main.py           # FastAPI backend code
 │   ├── requirements.txt  # Backend dependencies
