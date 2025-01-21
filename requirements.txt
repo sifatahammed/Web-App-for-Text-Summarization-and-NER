@@ -4,7 +4,9 @@ scikit-learn
 numpy
 pandas
 matplotlib
-seaborn
 os
-opencv-python 
-tqdm 
+transformers 
+datasets 
+evaluate
+nlpaug 
+nltk
