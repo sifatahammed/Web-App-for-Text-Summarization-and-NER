@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Summarization and NER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="column left-column">
+      <h2>Upload File or Enter Text</h2>
+      <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+      <p style="text-align: center; margin: 2 0;">OR</p>
+      <input type="file" id="fileInput" accept=".txt, .pdf, .csv">
+      <button onclick="processFile()">Load File</button>
+      <h2 style="text-align: center; margin-top: 10px;">Select Task</h2>
+      <div class="button-task">
+        <button onclick="runTask('summarization')">Text Summarization</button>
+        <button onclick="runTask('ner')">Named entity recognition (NER)</button>
+      </div>
+    </div>
+
+    <div class="column right-column">
+      <h2>Original Text</h2>
+      <textarea id="originalText" placeholder="The original text will be displayed here..." readonly></textarea>
+      
+      <div class="result-section">
+        <h2 class="result-title">Result</h2>
+        <div id="resultBox" class="result-box">
+          Select a task to see the result.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
