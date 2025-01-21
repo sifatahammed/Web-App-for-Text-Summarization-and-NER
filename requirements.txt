@@ -12,4 +12,13 @@ nlpaug
 nltk
 kaggle
 rouge-score
+safetensors
+fastapi 
+uvicorn 
+nest-asyncio 
+pyngrok 
+transformers 
+pdfminer.six 
+PyPDF2
+python-multipart
 py7zr
