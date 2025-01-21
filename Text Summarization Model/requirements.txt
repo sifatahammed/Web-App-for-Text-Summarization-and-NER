@@ -1,10 +1,12 @@
 Python
 tensorflow
-scikit-learn
+transformers 
+datasets 
+evaluate
 numpy
 pandas
 matplotlib
-seaborn
+kaggle
 os
-opencv-python 
-tqdm 
+rouge-score
+py7zr
