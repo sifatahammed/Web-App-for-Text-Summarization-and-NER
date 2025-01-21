@@ -2,7 +2,7 @@
 
 This project is a web application that provides two core functionalities:
 
-1. **Text Summarization**: Summarizes a given text using a fine-tuned BART model and then use transfer-learning train the model on a seperate dataset.
+1. **Text Summarization**: Summarizes a given text using a fine-tuned BART model trained on CNN/DailyMail dataset and then use transfer-learning to train the model on a seperate dataset.
 2. **Named Entity Recognition (NER)**: Extracts named entities (like persons, organizations, locations, etc.) from text using a fine-tuned XLNet model.
 
 Users can upload text files (.txt, .csv or .pdf) or directly input text to process. The app allows users to toggle between Text Summarization and NER functionalities.
