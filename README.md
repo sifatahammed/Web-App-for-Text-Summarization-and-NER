@@ -24,17 +24,21 @@ Users can upload text files (.txt, .csv or .pdf) or directly input text to proce
 ## Project Structure
 
 ```plaintext
-.
-├── backend/
-│   ├── main.py           # FastAPI backend code
-│   ├── requirements.txt  # Backend dependencies
-│   ├── models/          # Saved models and tokenizers
-│   └── utils/           # Utility scripts (optional)
 ├── frontend/
 │   ├── index.html       # Main HTML file
 │   ├── style.css        # CSS for styling
 │   ├── script.js        # JavaScript for interactivity
-└── README.md                # Project documentation
+├── NER_Model/
+│   ├── NER.ipynd
+├── Text_Sumarization_Model/
+│   ├── ext_sumarization.ipynd   
+├── backend/
+│   ├── main.py           # FastAPI backend code
+│   ├── requirements.txt  # Backend dependencies
+└── README.md                # Project documentation.
+└── License.txt              
+└── requirement.txt    
+
 ```
 
 ---
@@ -85,6 +89,9 @@ cd your-repo-name
 2. Upload a text file (.txt, .csv or .pdf) or manually input text.
 3. Select the desired task (Text Summarization or NER) using the buttons.
 4. View the results in the output box.
+
+A Demo-
+![Demo](Demo/Capture.PNG)
 
 ---
 
