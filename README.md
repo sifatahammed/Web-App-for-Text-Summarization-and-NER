@@ -31,7 +31,7 @@ Users can upload text files (.txt, .csv or .pdf) or directly input text to proce
 ├── NER_Model/
 │   ├── NER.ipynd
 ├── Text_Sumarization_Model/
-│   ├── ext_sumarization.ipynd   
+│   ├── text_sumarization.ipynd   
 ├── backend/
 │   ├── main.py           # FastAPI backend code
 │   ├── requirements.txt  # Backend dependencies
