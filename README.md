@@ -1,198 +1,128 @@
-# Web App for Text Summarization and Named Entity Recognition (NER) 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%"/>
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=23&duration=3000&pause=1000&center=true&vCenter=true&width=850&lines=AI-Powered+NLP+Web+Application;Text+Summarization+%7C+Named+Entity+Recognition;FastAPI+%7C+Transformers+%7C+JavaScript;BART+%7C+XLNet+%7C+Hugging+Face" alt="Typing SVG">
 
-This project is a web application that provides two core functionalities:
+# 🤖 Web App for Text Summarization & Named Entity Recognition
 
-1. **Text Summarization**: Summarizes a given text using a fine-tuned BART model trained on CNN/DailyMail dataset and then use transfer-learning to train the model on a seperate dataset.
-2. **Named Entity Recognition (NER)**: Extracts named entities (like persons, organizations, locations, etc.) from text using a fine-tuned XLNet model.
+**An AI-powered NLP web application for automatic text summarization and named entity recognition.**
 
-Users can upload text files (.txt, .csv or .pdf) or directly input text to process. The app allows users to toggle between Text Summarization and NER functionalities.
+<img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+<img src="https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black">
+<img src="https://img.shields.io/badge/PyTorch-ML-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+
+<br>
+
+<img src="https://img.shields.io/badge/TensorFlow-ML-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+
+</div>
+
+## 📌 Overview
+
+This project is a full-stack **Natural Language Processing (NLP)** web application that combines two major language-processing tasks:
+
+- 📝 **Text Summarization**
+- 🏷️ **Named Entity Recognition (NER)**
+
+Users can enter text directly or upload supported documents. The frontend communicates with a **FastAPI backend**, which processes the input and sends it to the appropriate Transformer-based NLP model.
+
+The application uses:
+
+- **BART** for text summarization
+- **XLNet** for Named Entity Recognition
+- **FastAPI** for the backend API
+- **HTML, CSS and JavaScript** for the frontend
+- **Hugging Face Transformers** for model integration
 
 ---
 
-## Features
+## ✨ Features
 
-- **Dynamic Input Support**: Accepts both manual text input and file uploads (.txt, .csv and .pdf).
-- **Interactive Results**: Users can view summarization and NER results dynamically.
-- **Pre-trained Models**:
-  - TensorFlow-based BART model for text summarization.
-  - PyTorch-based XLNet model for NER.
-- **Backend with FastAPI**: Provides endpoints for summarization, NER, and file processing.
-- **Frontend**: Built using HTML, CSS, and JavaScript for user interaction.
+| Feature | Description |
+|---|---|
+| 📝 Text Summarization | Generates concise summaries from long text |
+| 🏷️ NER | Detects named entities such as people, organizations and locations |
+| 📄 PDF Processing | Extracts text from PDF documents |
+| 📃 TXT Support | Processes plain-text files |
+| 📊 CSV Support | Can be extended for structured text processing |
+| 🌐 Web Interface | Interactive browser-based interface |
+| ⚡ FastAPI | REST API backend |
+| 🤗 Transformers | Modern Transformer-based NLP models |
+| 🔄 Transfer Learning | Supports adapting pretrained models to new datasets |
 
 ---
 
-## Project Structure
+# 🧠 How It Works
 
-```plaintext
-├── frontend/
-│   ├── index.html       # Main HTML file
-│   ├── style.css        # CSS for styling
-│   ├── script.js        # JavaScript for interactivity
-├── NER_Model/
-│   ├── NER.ipynd
-│   ├── requirements.txt      # Dependencies
-├── Text_Sumarization_Model/
-│   ├── text_sumarization.ipynd
-│   ├── requirements.txt     # Dependencies
-├── backend/
-│   ├── main.py           # Backend code
-│   ├── requirements.txt  # Backend dependencies
-└── README.md                # Project documentation.
-└── License.txt              
-└── requirement.txt    
-
+```text
+                    ┌──────────────────────┐
+                    │        User          │
+                    └──────────┬───────────┘
+                               │
+                     Text / PDF / TXT
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Web Interface     │
+                    │    HTML/CSS/JS       │
+                    └──────────┬───────────┘
+                               │
+                          REST API
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       FastAPI        │
+                    │       Backend        │
+                    └──────────┬───────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+                ▼                             ▼
+       ┌─────────────────┐          ┌─────────────────┐
+       │      BART       │          │      XLNet      │
+       │  Summarization  │          │       NER       │
+       └────────┬────────┘          └────────┬────────┘
+                │                            │
+                └─────────────┬──────────────┘
+                              ▼
+                    ┌──────────────────────┐
+                    │   Results Display    │
+                    └──────────────────────┘
 ```
 
----
-
-## Installation and Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/sifatahammed/Web-App-for-Text-Summarization-and-NER.git
-cd your-repo-name
-```
-
-### 2. Backend Setup
-#### Prerequisites:
-- Python 3.8+
-- Virtual Environment (optional but recommended)
-
-#### Steps:
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Install the required Python libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the FastAPI server:
-   ```bash
-   python main.py
-   ```
-   The backend server will run on `http://127.0.0.1:8000` by default.
-
-4. Use **ngrok** to expose your server to the internet:
-   ```bash
-   ngrok http 8000
-   ```
-   Copy the public URL provided by ngrok and replace the backend URL in your frontend `script.js` file.
-
-### 3. Frontend Setup
-1. Open the `frontend/index.html` file in your browser.
-2. Ensure the backend URL in `script.js` matches your running server or ngrok public URL.
 
 ---
+## 👨‍💻 Author
 
-## Usage
+<p align="center">
+  <strong>MD Sifat Ahammed Akash</strong>
+</p>
+<p align="center">
+  Full-Stack Developer • React Developer • AI/ML Enthusiast
+</p>
+<p align="center">
+  <a href="mailto:sifatahammed821@gmail.com">
+    <img src="https://img.shields.io/badge/Email-sifatahammed821%40gmail.com-red?logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/sifatahammed">
+    <img src="https://img.shields.io/badge/GitHub-sifatahammed-black?logo=github" alt="GitHub" />
+  </a>
+</p>
 
-1. Open the web app in your browser.
-2. Upload a text file (.txt, .csv or .pdf) or manually input text.
-3. Select the desired task (Text Summarization or NER) using the buttons.
-4. View the results in the output box.
 
-A Demo-
+## 📄 License
 
-![Demo](Demo/Capture.PNG)
+<div align="center">
 
----
+MIT License © MD Sifat Ahammed Akash
+</div>
+<div align="center">
+⭐ If this project is useful for your research or coursework, consider giving the repository a star!
 
-## API Endpoints
+Built with ❤️ using Python, TensorFlow, OpenCV, and Keras.
 
-### 1. **Health Check**
-   - **Endpoint**: `/health`
-   - **Method**: GET
-   - **Description**: Checks if the backend is running.
-
-### 2. **Text Summarization**
-   - **Endpoint**: `/summarization`
-   - **Method**: POST
-   - **Request Body**:
-     ```json
-     {
-       "text": "Your input text here"
-     }
-     ```
-   - **Response**:
-     ```json
-     {
-       "summary": "Summarized text here"
-     }
-     ```
-
-### 3. **Named Entity Recognition (NER)**
-   - **Endpoint**: `/ner`
-   - **Method**: POST
-   - **Request Body**:
-     ```json
-     {
-       "text": "Your input text here"
-     }
-     ```
-   - **Response**:
-     ```json
-     {
-       "entities": [
-         {"token": "John", "entity": "B-PER"},
-         {"token": "New York", "entity": "B-LOC"}
-       ]
-     }
-     ```
-
-### 4. **File Upload**
-   - **Endpoint**: `/upload`
-   - **Method**: POST
-   - **Request Body**: File (.txt or .pdf)
-   - **Response**:
-     ```json
-     {
-       "text": "Extracted text from the file"
-     }
-     ```
-
----
-
-## Dependencies
-
-### Backend
-- **FastAPI**: For API creation
-- **Transformers**: For loading and running pre-trained models
-- **PyPDF2**: For extracting text from PDFs
-- **pdfminer**: (Optional) For better PDF text extraction
-- **PyTorch** and **TensorFlow**: For model inference
-
-### Frontend
-- HTML, CSS, and JavaScript
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature-name"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a Pull Request.
-
----
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-- Hugging Face for pre-trained models and pipelines
-- CoNLL-2003 dataset for NER tasks
-- FastAPI and PyTorch/TensorFlow communities
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/> </div>
 
