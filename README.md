@@ -38,7 +38,12 @@ The application uses:
 - **Hugging Face Transformers** for model integration
 
 ---
+## 🖥️ Demo
+<div align="center">
+<img src=Demo/Capture.PNG>
+</div>
 
+---
 ## ✨ Features
 
 | Feature | Description |
@@ -402,14 +407,6 @@ Entity Detection
  ▼
 Frontend
 ```
-
----
-
-## 🖥️ Demo
-
-A sample application interface:
-
-*(Insert screenshot or demo link here)*
 
 ---
 
