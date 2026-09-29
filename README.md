@@ -98,6 +98,7 @@ The application uses:
                     └──────────────────────┘
 ```
 # 🏗️ System Architecture
+<img src="Demo/diagra.png">
 
 The application is divided into four major layers:
 
