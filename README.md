@@ -738,7 +738,7 @@ MIT License © MD Sifat Ahammed Akash
 <div align="center">
 ⭐ If this project is useful for your research or coursework, consider giving the repository a star!
 
-Built with ❤️ using Python, TensorFlow, OpenCV, and Keras.
+Built with ❤️ using Python, PyTorch, Hugging Face Transformers, and FastAPI.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/> </div>
 
